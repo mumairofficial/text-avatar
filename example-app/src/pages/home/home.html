@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Company Social
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content>
+    </ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list>
+    <button ion-item *ngFor="let user of users" (click)="presentUserInfoAlert(user)">
+      <text-avatar [text]="user.name" item-left></text-avatar>
+      <h2>{{ user.name || upper}}</h2>
+      <p>{{ user.company }} - {{ user.job_title }}</p>
+    </button>
+    
+    <ion-item ion-item style="text-align: center;">
+      <h4 ion-text color="primary">Pull To Load More</h4>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
