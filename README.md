@@ -41,9 +41,11 @@ Just create selector `<text-avatar>` and provide your string in `[text]="text"` 
 ```
 
 ### Sample project
-* ```sh cd example-app ```
-* ```sh npm i ``` or ```sh npm install ```
-* ```sh ionic serve ```
+Open terminal or command prompt and follow these steps:
+
+* ```cd example-app```
+* ```npm i ``` or ```npm install ```
+* ```ionic serve ```
 
 
 ### Quick Preview
