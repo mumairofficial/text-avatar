@@ -3,8 +3,8 @@ Helper directive for **Ionic 2.0** & **Ionic 3.x** to generate circular avatar, 
 
 
 ### Outline
-* Installation
-* How to use?
+* [Installation](#installation)
+* [How to use?](.#how-to-use)
 * Example
 * Sample project
 * Quick Preview
