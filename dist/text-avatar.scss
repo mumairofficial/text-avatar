@@ -1,0 +1,20 @@
+$text-image-size: 4.2rem !default;
+
+text-avatar {
+  background-color: red;
+  color: white;
+}
+
+text-avatar, text-avatar::after {
+  width: $text-image-size;
+  height: $text-image-size;
+  border-radius: $text-image-size / 2;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: large;
+}
+
+text-avatar::after {
+  content: attr(value);
+}
