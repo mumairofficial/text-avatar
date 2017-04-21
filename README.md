@@ -1,2 +1,3 @@
 # text-avatar
-ionic2, ionic-3 text avatar custom directive
+Helper directive for Ionic 2.0 & Ionic 3.x to generate circular avatar based upon first letter of given text.
+
