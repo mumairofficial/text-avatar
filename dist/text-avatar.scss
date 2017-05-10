@@ -18,3 +18,63 @@ text-avatar, text-avatar::after {
 text-avatar::after {
   content: attr(value);
 }
+
+/* avatars have different sizes on iOS, Android and Windows Phone  *
+ * to be able to use text-avatar in exchange or next to ion-avatar *
+ * we need to make text-avatar use the same sizes as ion-avatar    */
+
+/*
+ * iOS
+ */
+.item-ios text-avatar[item-left], // deprecated
+.item-ios text-avatar[item-start]{
+  margin: ($item-ios-padding-right / 2) $item-ios-padding-right ($item-ios-padding-right / 2) 0;
+}
+
+.item-ios text-avatar[item-right], // deprecated
+.item-ios text-avatar[item-end]{
+  margin: ($item-ios-padding-right / 2);
+}
+.item-ios text-avatar,
+.item-ios text-avatar::after {
+  width: $item-ios-avatar-size;
+  height: $item-ios-avatar-size;
+  border-radius: $item-ios-avatar-border-radius;
+}
+
+/*
+ * Material Design
+ */
+.item-md text-avatar[item-left], // deprecated
+.item-md text-avatar[item-start]{
+  margin: ($item-md-padding-right / 2) $item-md-padding-right ($item-md-padding-right / 2) 0;
+}
+.item-md text-avatar[item-right], // deprecated
+.item-md text-avatar[item-end]{
+  margin: ($item-md-padding-right / 2);
+}
+.item-md text-avatar,
+.item-md text-avatar::after {
+  width: $item-md-avatar-size;
+  height: $item-md-avatar-size;
+  border-radius: $item-md-avatar-border-radius;
+}
+
+/*
+ * Windows Phone
+ */
+.item-wp text-avatar[item-left], // deprecated
+.item-wp text-avatar[item-start]{
+  margin: ($item-wp-padding-right / 2) $item-wp-padding-right ($item-wp-padding-right / 2) 0;
+}
+
+.item-wp text-avatar[item-right], // deprecated
+.item-wp text-avatar[item-end]{
+  margin: ($item-wp-padding-right / 2);
+}
+.item-wp text-avatar,
+.item-wp text-avatar::after {
+  width: $item-wp-avatar-size;
+  height: $item-wp-avatar-size;
+  border-radius: $item-wp-avatar-border-radius;
+}
