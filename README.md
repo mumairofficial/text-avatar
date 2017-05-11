@@ -1,5 +1,5 @@
 # text-avatar
-Helper directive for **Ionic 2.0** & **Ionic 3.x** to generate circular avatar, based upon first letter of given text.
+Helper directive for **Ionic 2.0** & **Ionic 3.x** to generate circular avatar, based upon first letter of given text. Color can be generated automatically or can be submitted by the user.
 
 
 ### Outline
@@ -33,7 +33,7 @@ Just create selector `<text-avatar>` and provide your string in `[text]="text"` 
 ```ts
 <ion-list>
   <button ion-item *ngFor="let user of users" (click)="presentUserInfoAlert(user)">
-    <text-avatar [text]="user.name" item-left></text-avatar>
+    <text-avatar [text]="user.name" [color]="user.color" item-left></text-avatar>
     <h2>{{ user.name || upper}}</h2>
     <p>{{ user.company }} - {{ user.job_title }}</p>
   </button>
