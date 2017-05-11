@@ -15,7 +15,7 @@
 
   <ion-list>
     <button ion-item *ngFor="let user of users" (click)="presentUserInfoAlert(user)">
-      <text-avatar [text]="user.name" item-left></text-avatar>
+      <text-avatar [text]="user.name" [color]="user.color" item-left></text-avatar>
       <h2>{{ user.name || upper}}</h2>
       <p>{{ user.company }} - {{ user.job_title }}</p>
     </button>
