@@ -49,4 +49,5 @@ Open terminal or command prompt and follow these steps:
 
 
 ### Quick Preview
-![image](https://cloud.githubusercontent.com/assets/6498132/25268065/c3049e36-2690-11e7-8185-f4cc04d4a47b.png)
+![image](https://cloud.githubusercontent.com/assets/6498132/25974351/195fc332-36c2-11e7-801f-6c634c3f97d3.png)
+
