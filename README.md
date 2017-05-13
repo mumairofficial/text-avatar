@@ -12,6 +12,13 @@ Helper directive for **Ionic 2.0** & **Ionic 3.x** to generate circular avatar, 
 ### Installation
 > #### Ionic CLI version 2.x
 > Open up ionic-cli and execute command ```ionic g directive text-avatar``` and copy all three files from **dist** folder to your `your-> cool-app/src/components/text-avatar/` folder.
+>
+> for Ionic version < 3.1.0 add the following Sass-Variables to your app.scss:
+> ```sass
+> $item-ios-avatar-border-radius:          50% !default;
+> $item-md-avatar-border-radius:           50% !default;
+> $item-wp-avatar-border-radius:           50% !default;
+> ```
 
 > #### Ionic CLI version 3.x 
 > Open up ionic-cli and execute command ```ionic g directive text-avatar``` and copy all three files from **dist** folder to your `your-> cool-app/src/directives/text-avatar/` folder.
