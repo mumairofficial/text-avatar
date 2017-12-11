@@ -8,7 +8,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   public users: any[] = [
-    { name: "Abdul Basit", company: "Siemens", job_title: "Technical Lead" },
+    { name: "Abdul Basit", company: "Siemens", job_title: "Technical Lead", color: '#ccc' },
     { name: "Amin Ullah", company: "NBS", job_title: "BI Engineer" },
     { name: "Haris Altaf", company: "Siemens", job_title: "Technical Lead" },
     { name: "Muhammad Umair", company: "Siemens", job_title: "Software Engineer" },
@@ -24,9 +24,10 @@ export class HomePage {
     console.log(JSON.stringify(user));
   }
 
-  public doRefresh($refresher) : void {
+  public doRefresh($refresher): void {
     setTimeout(() => {
       $refresher.complete();
     }, 3000);
   }
+
 }
