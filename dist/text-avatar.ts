@@ -27,6 +27,6 @@ export class TextAvatarDirective {
   }
 
   private backgroundColorHexString(color: string, text: string): string {
-    return color || this.colorGenerator.getColor(this.extractFirstCharacter(text));
+    return color || this.colorGenerator.getColor(text);
   }
 }
