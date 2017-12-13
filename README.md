@@ -20,7 +20,7 @@ Helper directive for **Ionic 2.0** & **Ionic 3.x** to generate circular avatar, 
 > $item-wp-avatar-border-radius:           50% !default;
 > ```
 
-> #### Ionic CLI version 3.x 
+> #### Ionic CLI version 3.x
 > Open up ionic-cli and execute command ```ionic g directive text-avatar``` and copy all three files from **dist** folder to your `your-> cool-app/src/directives/text-avatar/` folder.
 
 and last thing register our new directive **TextAvatar** in *app.module.ts* file in `declarations` sections of *@NgModule* decorator.
@@ -36,7 +36,11 @@ and last thing register our new directive **TextAvatar** in *app.module.ts* file
 
 
 ### How to use?
-Just create selector `<text-avatar>` and provide your string in `[text]="text"` property. it will generate nice and cool text based circular avatar. Following example will show its use in `ion-list`
+Just create selector `<text-avatar>` and provide your string in `[text]="text"` property.
+It will generate nice and cool text based circular avatar.
+Optionally `[color]="#ff0000"` and/or `[textColor]="#00ff00"` properties can be added
+to create an avatar with red background and green text.  
+Following example will show its use in `ion-list`
 
 
 #### Example
@@ -63,4 +67,3 @@ Given example is generated via Ionic CLI 3.0.0 so in older version you might not
 
 ### Quick Preview
 ![image](https://cloud.githubusercontent.com/assets/6498132/25974351/195fc332-36c2-11e7-801f-6c634c3f97d3.png)
-
