@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let user of users" (click)="presentUserInfoAlert(user)">
+      <ion-avatar slot="start">
+        <text-avatar [text]="user.name" [color]="user.color"></text-avatar>
+      </ion-avatar>
+      
+      <ion-label>
+        <ion-text>
+          <h3>{{ user.name }}</h3>
+        </ion-text>
+
+        <p>{{ user.company }} - {{ user.job_title }}</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://cloud.githubusercontent.com/assets/6498132/25974172/06632590-36c1-11e7-8fff-086477590838.jpg" />
+      </ion-avatar>
+
+      <ion-label>
+        <ion-text>
+          <h3>John Doe</h3>
+        </ion-text>
+
+        <p>I've had a pretty messed up day. If we just...</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item ion-item style="text-align: center;">
+      <ion-label color="primary">Pull To Load More</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

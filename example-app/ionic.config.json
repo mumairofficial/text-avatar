@@ -1,5 +1,5 @@
 {
-  "name": "text_avatar",
-  "app_id": "",
-  "type": "ionic-angular"
+  "name": "text-avatar",
+  "integrations": {},
+  "type": "angular"
 }
